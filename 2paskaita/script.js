@@ -109,17 +109,22 @@ if (str >= 6) {
 
 // 3 uzduotis
 
-const myAge = 0.1;
+const myAge = 100;
 
 if (myAge < 1) {
   console.log("Invalid age");
-} else if (18 >= myAge >= 1) {
+} 
+else if (17 >= myAge >= 1) {
   console.log("Child");
-} else if (myAge >= 100) {
+} 
+else if (myAge >= 100) {
   console.log("Invalide age");
-} else console.log("Adult");
+} 
+else console.log("Adult");
 
 // 4 uzduotis
+// ||- or (tarp)
+// && - ir (and)
 
 const car = "VW";
 if (car === 'VW' || car === 'Audi' || car === 'Bentley' || car === 'Bugatti' || car === 'Lamborghini' || car === 'Porsche') {
