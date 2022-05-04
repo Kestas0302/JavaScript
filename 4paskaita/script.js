@@ -1,6 +1,5 @@
 console.log("Ketvirta paskaita ciklams");
 
-
 // kintamieji ciklams: i, j ,k
 // i++ yra i=i+1 i-- yra i=i-1
 // += x+=yx=x+y
@@ -34,15 +33,14 @@ console.log("Ketvirta paskaita ciklams");
 //     if (i === repeat - 1){
 //         // paskutinis ciklas
 //         result += `${dogName}.`;
-        
+
 //     }else {
 //         result += `${dogName},`;
 //     }
 // }
 
-// // i=0; i<3;  
+// // i=0; i<3;
 // console.log(result);
-
 
 // const start = 1;
 // const count = 9;
@@ -52,13 +50,11 @@ console.log("Ketvirta paskaita ciklams");
 // }
 // console.log(result);
 
-
 // let i = 0;
 // while (i < 20) {
 //     console.log(i);
 //     i+=3;
 // }
-
 
 // do...while ciklas pirmiausia įvykdys kūną, tada patikrins būklę ir, kol tai tiesa, vėl ir vėl ją vykdys.
 // let i = 0;
@@ -88,15 +84,13 @@ console.log("Ketvirta paskaita ciklams");
 
 // function getLaugh(num) {
 //     let message = '';
-//     for(let i = 0; i < num; i++) 
+//     for(let i = 0; i < num; i++)
 //     message += 'ha';
 //   return message;
 // }
- 
+
 // console.log(getLaugh(4));
 // ____________________________________________________________________________________
-
-
 
 // ______________________________________________________________________________________
 
@@ -112,7 +106,6 @@ console.log("Ketvirta paskaita ciklams");
 //     i++;
 // }
 
-
 // 2 pratimas
 
 // let combo = "";
@@ -122,7 +115,6 @@ console.log("Ketvirta paskaita ciklams");
 //     combo += "Kestutis";
 //     console.log(combo);
 // }
-
 
 // JavaScript Math objektai
 
@@ -137,15 +129,13 @@ console.log("Ketvirta paskaita ciklams");
 // let rnd5 = Math.floor((rnd * 5) + 1);
 // console.log(rnd5);
 
-
 // 3 pratimas
 
 // let rnd = Math.random();
 // let rnd512 = Math.floor((rnd * 8)+ 5);
 // console.log(rnd512);
 
-
-// 4 pratimas 
+// 4 pratimas
 
 // const randomNumber = Math.floor(Math.random() * 5) + 1;
 // if (randomNumber === 1) {
@@ -153,3 +143,38 @@ console.log("Ketvirta paskaita ciklams");
 // } else {
 //     console.log(`${randomNumber} Try again next time`);
 // }
+
+// DOM manipuliavimo pagrindai
+
+// 1 pratimas
+
+// document.body.innerHTML = "<h2>Kęstutis</h2>";
+
+// 2 pratimas
+
+const changeName = document.getElementById("name");
+changeName.textContent = "Kęstutis";
+
+// 3 pratimas
+
+const listChange = document.querySelectorAll("li")[2];
+listChange.textContent = "Sūris";
+
+//  Kompleksiniai DOM selektoriai
+
+// 1 pratimas
+
+const blueT0 = document.querySelectorAll("span")[1];
+blueT0.textContent = "blue";
+console.log(blueT0.textContent);
+
+// 2 pratimas
+
+const firstListItem = document.querySelectorAll("li")[3];
+const secondListItem = document.querySelectorAll("li")[4];
+
+const bmw_group = firstListItem.textContent;
+const vw_group = secondListItem.textContent;
+
+firstListItem.textContent = vw_group;
+secondListItem.textContent = bmw_group;
