@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formos</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Salary Checked Form</h1>
+    <form>
+<div>
+    <label>workingField</label>
+    <select name="workingField" id="">
+<option value="it">IT</option>
+<option value="managment">Managemant</option>
+<option value="pharmacy">Pharmacy</option>
+<option value="construction">Construction</option>
+    </select>
+</div>
+<div>
+    <label for="position">Position</label>
+    <input type="text" name="position" required>
+</div>
+<div>
+    <h4>Genders</h4>
+<div>
+    <input type="radio" name="gender" value="female" required>
+    <label for="">Female</label>
+</div>
+<div>
+    <input type="radio" name="gender" value="man" required>
+    <label for="">Man</label>
+</div>
+<div>
+    <input type="radio" name="gender" value="others" required>
+    <label for="">Others</label>
+</div>
+</div>
+<div>
+    <label for="experience">Work experience</label>
+    <input type="number" name="experience" required>
+</div>
+<input type="submit" value="Check salary">
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
