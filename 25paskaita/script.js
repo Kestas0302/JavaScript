@@ -14,10 +14,20 @@ const renderTodo = (todo) => {
     const todoStatus = document.createElement('span');
     
     todoEl.className = "todo";
-    todoTitle.className = "todo-title";
+    todoTitle.className = completed ? "todo-title done" : "todo-title";
     todoStatus.className = completed ? "todo-status done" : "todo-status";
 
     todoTitle.textContent = title;
+
+
+    todoStatus.addEventListener("click", () => {
+        // console.log(completed);
+        todoStatus.classList.toggle("done");
+        todoTitle.classList.toggle("done");
+
+        todoStatus.completed = !todoStatus.completed;
+        console.log(todoStatus.completed);
+    })
     
 todoEl.append(todoTitle, todoStatus);
 document.querySelector(".todo-container").prepend(todoEl);

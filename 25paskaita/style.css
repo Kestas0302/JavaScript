@@ -43,6 +43,10 @@ body {
   margin: 0;
 }
 
+.todo-title.done {
+  color: #d3d3d3;
+}
+
 .todo-status {
   padding: 12px;
   background-color: #aaaaaa;

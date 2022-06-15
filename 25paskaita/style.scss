@@ -31,6 +31,9 @@ body{
         font-size: 24px;
         font-weight: 500;
         margin: 0;
+        &.done {
+            color: #d3d3d3;
+        }
     }
     &-status{
         padding: 12px;
