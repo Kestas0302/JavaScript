@@ -82,5 +82,5 @@ for (let i=0; i<myName.length; i++){
 
 for (let i=0; i<myName.length; i++){
     const char = myName[i];
-    console.log(`${i+1}. ${char}`);
+    console.log(`${i+1} raide yra ${char}`);
 }
